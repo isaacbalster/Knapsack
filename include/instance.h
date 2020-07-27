@@ -7,7 +7,8 @@
 #include <string>
 
 struct ITEM {
-  unsigned cost;
+  unsigned index;
+  unsigned profit;
   unsigned weight;
   double benefit_ratio;
 };
@@ -25,10 +26,11 @@ public:
   //Getters
   unsigned get_n();
   unsigned get_B();
+  std::vector< ITEM > get_items();
 
   //Methods
-  void read_from_file(const std::string&);
-  void show_data();
+  void read_from_file( const std::string& );
+  void show_instance();
 };
 
 #endif /* INSTANCE_H_ */

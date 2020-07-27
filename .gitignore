@@ -1,1 +1,4 @@
 include/instance.h.gch
+include/heuristics.h.gch
+include/solution.h.gch
+instances/instances.txt
